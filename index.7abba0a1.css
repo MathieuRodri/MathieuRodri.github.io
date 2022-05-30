@@ -13,6 +13,18 @@
   }
 }
 
+@keyframes toBlur {
+  from {
+    filter: blur(0) opacity();
+    -webkit-filter: blur(0) opacity();
+  }
+
+  to {
+    filter: blur(.5rem) opacity(50%);
+    -webkit-filter: blur(.5rem) opacity(50%);
+  }
+}
+
 @keyframes griditemAppear {
   from {
     transform: skew(5deg);
@@ -114,11 +126,10 @@ main .background-img {
   z-index: -9999;
   height: 100%;
   width: 100%;
-  filter: blur(.5rem) opacity(50%);
-  -webkit-filter: blur(.5rem) opacity(50%);
   background-image: url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
   background-position: center;
   background-size: cover;
+  animation: toBlur 2s ease-in-out forwards;
   position: absolute;
   top: 0;
   left: 0;
@@ -137,7 +148,7 @@ main .left h1 {
   font-size: 4vw;
   font-weight: 700;
   line-height: 120%;
-  animation: fadeAppear .5s ease-in-out forwards;
+  animation: fadeAppear .5s ease-in-out 1s forwards;
 }
 
 main .left p {
@@ -145,7 +156,7 @@ main .left p {
   filter: opacity(50%);
   -webkit-filter: opacity(50%);
   opacity: 0;
-  animation: fadeAppear .5s ease-in-out .15s forwards;
+  animation: fadeAppear .5s ease-in-out 1.15s forwards;
 }
 
 main .right {
@@ -163,13 +174,13 @@ main .right {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  animation: fadeAppear .5s ease-in-out .3s forwards;
+  animation: fadeAppear .5s ease-in-out 1.3s forwards;
   display: flex;
 }
 
 main .right h2 {
   opacity: 0;
-  animation: fadeAppear .5s ease-in-out .45s forwards;
+  animation: fadeAppear .5s ease-in-out 1.45s forwards;
 }
 
 main .right img {
@@ -179,7 +190,7 @@ main .right img {
   object-position: center;
   opacity: 0;
   border-radius: .5rem;
-  animation: fadeAppear .5s ease-in-out .6s forwards;
+  animation: fadeAppear .5s ease-in-out 1.6s forwards;
 }
 
 main .right span {
@@ -187,7 +198,7 @@ main .right span {
   -webkit-filter: opacity(50%);
   text-align: center;
   opacity: 0;
-  animation: fadeAppear .5s ease-in-out .75s forwards;
+  animation: fadeAppear .5s ease-in-out 1.75s forwards;
 }
 
 main .main-scroll {
@@ -392,7 +403,8 @@ footer #copyright {
   }
 
   main .left h1 {
-    font-size: 7vw;
+    font-size: 9vw;
+    line-height: 140%;
   }
 
   main .right, .contact .left {
