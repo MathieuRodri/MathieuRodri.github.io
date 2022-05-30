@@ -1,0 +1,134 @@
+$primary: #333;
+$color: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: $color;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: $primary;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  padding-inline: 10%;
+  max-width: 90rem;
+}
+
+header {
+  background-color: #444;
+  padding-block: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+    button {
+      border: white 2px solid;
+      padding: 0.5rem 1rem;
+      border-radius: 9999rem;
+      font-size: 1rem;
+    }
+  }
+}
+main {
+  padding-top: 2rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    height: 100%;
+    width: 100%;
+    filter: blur(0.5rem) opacity(50%);
+    background-image: url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+  .main-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+  }
+  p {
+    width: 50%;
+    opacity: 0.5;
+  }
+}
+section {
+  background-color: white;
+  padding-block: 2rem;
+  * {
+    color: $primary;
+  }
+  h2 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    .grid-item {
+      background-color: $primary;
+      padding: 2rem;
+      border-radius: 1rem;
+      * {
+        color: white;
+      }
+      p {
+        padding-top: 1rem;
+        opacity: 0.5;
+      }
+      a {
+        width: fit-content;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px white solid;
+        border-radius: 9999;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

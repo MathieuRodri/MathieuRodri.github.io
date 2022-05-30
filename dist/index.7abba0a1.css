@@ -1,0 +1,154 @@
+* {
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #333;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.container {
+  max-width: 90rem;
+  padding-inline: 10%;
+}
+
+header {
+  width: 100%;
+  z-index: 9999;
+  background-color: #444;
+  padding-block: 2rem;
+  position: fixed;
+  box-shadow: 0 0 2rem #0003;
+}
+
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+header .container nav {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+header .container nav ul {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+header .container button {
+  border: 2px solid #fff;
+  border-radius: 9999rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  display: flex;
+  position: relative;
+}
+
+main .background-img {
+  z-index: -9999;
+  height: 100%;
+  width: 100%;
+  filter: blur(.5rem) opacity(50%);
+  background-image: url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .main-title {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+main p {
+  width: 50%;
+  opacity: .5;
+}
+
+section {
+  background-color: #fff;
+  padding-block: 2rem;
+}
+
+section * {
+  color: #333;
+}
+
+section h2 {
+  align-items: center;
+  gap: 1rem;
+  font-size: 3rem;
+  display: flex;
+}
+
+section h2 i {
+  font-size: 2rem;
+}
+
+section .grid {
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+  display: grid;
+}
+
+section .grid .grid-item {
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+section .grid .grid-item * {
+  color: #fff;
+}
+
+section .grid .grid-item p {
+  opacity: .5;
+  padding-top: 1rem;
+}
+
+section .grid .grid-item a {
+  width: fit-content;
+  border: 2px solid #fff;
+  border-radius: 9999px;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  font-size: .7rem;
+  display: flex;
+}
+
+section .grid .grid-item a i {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=index.7abba0a1.css.map */
