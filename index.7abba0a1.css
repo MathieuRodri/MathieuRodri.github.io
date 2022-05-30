@@ -61,8 +61,6 @@ button {
 }
 
 .container {
-  margin: auto;
-  max-width: 90rem;
   padding-inline: 10%;
 }
 
