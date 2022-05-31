@@ -427,6 +427,10 @@ footer #copyright {
     display: none;
   }
 
+  main .left {
+    width: 100%;
+  }
+
   main .left h1 {
     font-size: 9vw;
     line-height: 140%;
@@ -438,6 +442,7 @@ footer #copyright {
   }
 
   main .right {
+    width: 0%;
     display: none;
   }
 
