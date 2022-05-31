@@ -434,9 +434,11 @@ footer #copyright {
 
   .contact-block .right {
     z-index: 1;
+    border-radius: 1rem;
     width: 100% !important;
     -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
     backdrop-filter: saturate(180%) blur(20px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
     background-color: #44444480 !important;
   }
 }
