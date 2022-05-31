@@ -1,8 +1,17 @@
 var numSteps = 100;
 window.addEventListener("load", function(event) {
     boxElement = document.querySelectorAll(".grid-item");
+    changeColors();
     createObserver();
 }, false);
+function changeColors() {
+    boxElement.forEach((element)=>{
+        let random = Math.floor(Math.random() * 36) * 10;
+        let newColor = 'hsl(' + random + ',30%, 15%)';
+        console.log(newColor);
+        element.style.backgroundColor = newColor;
+    });
+}
 function createObserver() {
     var observer;
     var options = {
