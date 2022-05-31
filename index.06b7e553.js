@@ -27,8 +27,7 @@ function buildThresholdList() {
 function handleIntersect(entries, observer) {
     entries.forEach(function(entry) {
         value = entry.intersectionRatio;
-        //entry.target.classList.add("fadeAnimate");
-        entry.target.style.opacity = (value * 0.5 + 0.5) * 100 + '%';
+        if (value >= 0.1) entry.target.classList.add("fadeAnimate");
     });
 }
 
